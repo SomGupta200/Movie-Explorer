@@ -5,9 +5,11 @@ import MovieDetails from './Pages/MovieDetails'
 import Favourite from './Pages/Favourite'
 import Error from './Pages/Error'
 import { BrowserRouter , Routes, Route } from 'react-router-dom'
+import Navbar from './Components/Navbar'
 const App = () => {
   return (
     <BrowserRouter>
+    <Navbar/>
     <Routes>
      <Route path='/' element={<Home/>}/>
      <Route path='/movies' element={<Movies/>}/>
